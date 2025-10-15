@@ -1,0 +1,21 @@
+# C++ Project on Replit
+
+## Overview
+This is a C++ project set up for learning and development on Replit.
+
+## Setup
+- Language: C++ (Clang 14)
+- Standard: C++17
+- Compiler: clang++
+
+## How to Use
+1. Write your C++ code in `main.cpp` or create new .cpp files
+2. Click the "Run" button at the top to compile and run your program
+3. The program will automatically compile and execute
+
+## Current State
+- Basic Hello World program is set up in `main.cpp`
+- Workflow configured to compile with C++17 standard
+
+## Recent Changes
+- September 30, 2025: Initial C++ environment setup with clang++ compiler
