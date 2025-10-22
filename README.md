@@ -1,12 +1,17 @@
-# Hudson County Community College C++ Class Assistant (HcccCppClassAssistant)
+# Hudson County Community College C++ Class Assistant (`HcccCppClassAssistant`)
 
-A lightweight workspace to organize lectures, coding labs, and assignments for HCCC CSC-115 (C++). Includes single-file C++ programs and compiled executables for quick reference and testing in class.
+A lightweight workspace for organizing lectures, coding labs, and assignments for **HCCC CSC-115 (C++)**.
+Contains single-file `.cpp` programs and compiled `.exe` outputs for quick testing and reference.
 
-## Contents
-- Unit 3 examples and assignments (single .cpp files with matching .exe outputs)
-- Archived materials under old/ (lectures, prior units, and labs)
+---
 
-Example layout (truncated):
+## 📁 Contents
+
+* **Unit 3** — examples and assignments (each with a matching `.exe`)
+* **old/** — archived lectures and previous units
+
+**Example layout (truncated):**
+
 ```
 HcccCppClassAssistant/
   README.md
@@ -25,44 +30,78 @@ HcccCppClassAssistant/
       ...
 ```
 
-## Prerequisites (Windows + VS Code)
-- Visual Studio Code
-- VS Code extension: C/C++ (Microsoft)
-- A C++ compiler (pick one):
-  - Microsoft C++ (MSVC) via Visual Studio Build Tools / Visual Studio
-  - MinGW-w64 (e.g., via MSYS2)
+---
 
-Optional: Git installed if you plan to version and sync changes.
+## ⚙️ Prerequisites (Windows + VS Code)
 
-## Quick Start in VS Code
-1. Open the folder in VS Code.
-2. Open any .cpp file (e.g., Unit3Assignment1.cpp).
-3. Build and run one of the following ways:
-   - Using the Run button: Click Run > Run Without Debugging (or the ▶ button). On first use, select your compiler.
-   - Using a terminal with MinGW (g++):
-     - g++ -std=c++17 Unit3Assignment1.cpp -o Unit3Assignment1.exe
-     - .\Unit3Assignment1.exe
-   - Using a terminal with MSVC (cl):
-     - Open “Developer Command Prompt for VS”
-     - cl /EHsc Unit3Assignment1.cpp
-     - Unit3Assignment1.exe
+* [Visual Studio Code](https://code.visualstudio.com/)
+* **C/C++ extension** (Microsoft)
+* **C++ compiler** (choose one):
 
-Notes:
-- Executables (.exe) are placed next to their source files for convenience.
-- If input is required, run from a terminal so you can type into stdin.
+  * MSVC via *Visual Studio* or *Build Tools*
+  * MinGW-w64 via *MSYS2* or similar
+* *(Optional)* Git for version control
 
-## Recommended VS Code setup
-- C/C++ extension provides IntelliSense and debugging.
-- Optional: Configure your default compiler path (File > Preferences > Settings > "C_Cpp.default.compilerPath").
-- Optional: Set up tasks.json and launch.json for one-click build/run per file.
+---
 
-## Conventions
-- File naming: Unit<N>Assignment<M>.cpp, Unit<N>CodingLab<M>.cpp, Lecture <MM-DD-YYYY>.cpp
-- Keep compiled artifacts (.exe) out of source control if you’re using Git (add *.exe to .gitignore).
-- The old/ folder contains archived lectures and earlier units; treat as read-only reference.
+## ▶ Quick Start
 
-## Academic integrity
-These materials are for study and practice. Follow your instructor’s policy on collaboration and submissions.
+1. Open the project folder in VS Code.
+2. Open a `.cpp` file (e.g., `Unit3Assignment1.cpp`).
+3. Build and run:
 
-## License
-No explicit license is provided. Content is intended for personal educational use unless the repository owner specifies otherwise.
+### Using VS Code Run Button
+
+* Click **Run > Run Without Debugging** (▶)
+* On first use, select your compiler
+
+### Using Terminal — MinGW (g++)
+
+```bash
+g++ -std=c++17 Unit3Assignment1.cpp -o Unit3Assignment1.exe
+.\Unit3Assignment1.exe
+```
+
+### Using Terminal — MSVC (cl)
+
+```cmd
+cl /EHsc Unit3Assignment1.cpp
+Unit3Assignment1.exe
+```
+
+**Notes**
+
+* `.exe` files are stored beside their `.cpp` sources.
+* Run from a terminal when input is required.
+
+---
+
+## 💻 Recommended VS Code Setup
+
+* Enable IntelliSense and debugging (C/C++ extension).
+* *(Optional)* Set your compiler path:
+  `File > Preferences > Settings > C_Cpp.default.compilerPath`
+* *(Optional)* Configure `tasks.json` / `launch.json` for one-click builds.
+
+---
+
+## 📜 Conventions
+
+* Naming: `Unit<N>Assignment<M>.cpp`, `Unit<N>CodingLab<M>.cpp`, `Lecture <MM-DD-YYYY>.cpp`
+* Exclude `.exe` files from Git (`*.exe` in `.gitignore`)
+* `old/` folder = archived content (read-only reference)
+
+---
+
+## 🧠 Academic Integrity
+
+Use these materials for learning and practice. Follow your instructor’s rules on collaboration and submissions.
+
+---
+
+## 📄 License
+
+No explicit license.
+Content is for **personal educational use** unless otherwise specified by the repository owner.
+
+---
