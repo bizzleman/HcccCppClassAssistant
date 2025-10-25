@@ -22,6 +22,10 @@ int main() {
     double annualInterestRate, startingBalance;
     int numberOfMonths;
 
+    cout << "This program calculates the balance of a savings account over time.\n";
+    cout << "It considers deposits, withdrawals, and monthly interest.\n";
+    cout << "After all months, it shows your ending balance, total deposits, withdrawals, and interest earned.\n\n";
+
     // Get user input
     cout << "Enter the annual interest rate (as a percentage): ";
     cin >> annualInterestRate;
