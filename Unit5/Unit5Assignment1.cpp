@@ -11,15 +11,12 @@ using namespace std;
 int main() {
     ofstream outputFile;
 
-    // Open the file
     outputFile.open("Numbers.txt");
 
-    // Write numbers 1–100
     for (int i = 1; i <= 100; i++) {
         outputFile << i << endl;
     }
 
-    // Close the file
     outputFile.close();
 
     return 0;
