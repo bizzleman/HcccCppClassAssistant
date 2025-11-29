@@ -1,3 +1,8 @@
+/*
+Opens the Numbers.txt file that was created by the code you wrote in Unit 5 Assignment 1, 
+reads all of the numbers from the file and displays them, then closes the file.
+*/
+
 #include <iostream>
 #include <fstream>
 using namespace std;
