@@ -1,37 +1,26 @@
 #include <iostream>
+#include <fstream>
 using namespace std;
 
-// function to calculate shipping cost, prototype
-double calculateShipping(double weight, double distance);
-
-int main() {
-    double weight, distance;
-
-    cout << "Enter the package weight (lb): ";
-    cin >> weight;
-
-    cout << "Enter the distance (miles): ";
-    cin >> distance;
-
-    double totalCost = calculateShipping(weight, distance); // call the function
-
-    cout << "The total shipping cost is: $" << totalCost << endl; // display result
-
-    return 0;
+// Function that returns the highest of three numbers
+int highest(int a, int b, int c) {
+    int max = a;
+    if (b > max) max = b;
+    if (c > max) max = c;
+    return max;
 }
 
-double calculateShipping(double weight, double distance) {
-    double costPerMile;
+int main() {
+    ifstream file("numbers.txt");
+    int x, y, z;
 
-    if (weight >= 0 && weight <=2) {
-        costPerMile = 0.02;
-    } else if (weight > 2 && weight <= 6) {
-        costPerMile = 0.04;
-    } else if (weight > 6 && weight <= 10) {
-        costPerMile = 0.06;
-    } else {
-        costPerMile = 0.10;
+    if (!file) {
+        cout << "Cannot open file.\n";
+        return 0;
     }
 
-    return costPerMile * distance; // return total cost
+    file >> x >> y >> z;
+
+    cout << "The highest number is: " << highest(x, y, z);
+    return 0;
 }

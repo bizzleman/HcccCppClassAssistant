@@ -1,0 +1,2 @@
+Total temperature = 0
+Average = 0
