@@ -1,13 +1,15 @@
+/*
+Array
+*/
 
 #include <iostream>
 using namespace std;
 
-void showAge() {
-    int age = 20; // local variable
-    cout << "Your age is: " << age << endl;
-}
-
 int main() {
-    showAge();
+    const int SIZE = 5; // Uppercase constant for array size
+    int numbers[SIZE] = {10, 20, 30, 40, 50}; // Declare an array of integers
+
+    cout << "The 3rd element is: " << numbers[2] << endl;
+
     return 0;
 }
